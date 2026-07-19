@@ -78,4 +78,4 @@ Imbalanced classification · XGBoost & scikit-learn · cost-sensitive decision t
 MIT — see [LICENSE](LICENSE).
 
 ---
-*Akshay Shelke — MSc Data Science (Merit), Coventry University · [LinkedIn] · [Email](mailto:akshayraj2895@gmail.com)*
+*Akshay Shelke — MSc Data Science (Merit), Coventry University  · [Email](mailto:akshay.sv.shelke@gmail.com)*
