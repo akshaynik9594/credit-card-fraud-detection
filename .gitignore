@@ -1,0 +1,4 @@
+data/creditcard.csv
+data/creditcard_synthetic.csv
+__pycache__/
+venv/
