@@ -41,6 +41,8 @@ On the random split, ROC-AUC is nearly identical between models (0.968 vs. 0.973
 | Cost at optimal threshold | £11,690 | £11,070 |
 | Cost at default 0.5 threshold | £16,070 | £13,065 |
 
+![Random vs. time-based split comparison](outputs/04_split_comparison.png)
+
 *Why they differ, honestly:* the time-based test window (the last 30% of transactions chronologically) happens to have a lower fraud rate than the random split's test set (0.126% vs. 0.173%), and the ULB dataset only spans two days — so with relatively few fraud cases in either tail, part of the PR-AUC gap is sampling noise, not necessarily a signal of concept drift. What the comparison *does* show reliably: the two protocols disagree on which metric looks better (PR-AUC favours the random split, ROC-AUC favours the time split), which is itself the point — a single split and a single metric can quietly mislead you about production performance, and the time-based protocol is the one that can't cheat by letting future transactions leak into training.
 
 ## Data
